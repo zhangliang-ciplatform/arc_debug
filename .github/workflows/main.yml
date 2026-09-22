@@ -1,0 +1,15 @@
+name: Manual Action
+
+on:
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  test-job:
+    runs-on: arc-debug-ci-platform-runner-set
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.1
+    
+      - name: Run a Sample Command # 第二步：运行一个示例命令
+        run: |
+          cat README.md
