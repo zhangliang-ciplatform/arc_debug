@@ -12,4 +12,4 @@ jobs:
     
       - name: Run a Sample Command # 第二步：运行一个示例命令
         run: |
-          cat README.md
+          sleep 120 && cat README.md
